@@ -13,26 +13,39 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val averageStatus = binding.status.context.getText(R.string.average_status)
+
         binding.plus.setOnClickListener {
-            counter++
-            binding.status.text = "$averageStatus ${50 - counter}"
-            binding.counter.text = counter.toString()
-            binding.status.setTextColor(getColorStateList(R.color.blue))
-            if (counter >= 50) {
-                binding.status.text = getText(R.string.warning_status)
-                binding.reset.visibility = View.VISIBLE
-                binding.status.setTextColor(getColorStateList(R.color.red))
+            if (counter < 51) {
+                counter++
+                binding.status.text = "$averageStatus ${50 - counter}"
+                binding.counter.text = counter.toString()
+                binding.status.setTextColor(getColorStateList(R.color.blue))
+
+                if (counter >= 50) {
+                    binding.status.text = getText(R.string.warning_status)
+                    binding.reset.visibility = View.VISIBLE
+                    binding.status.setTextColor(getColorStateList(R.color.red))
+                    binding.plus.isEnabled = false
+                }
+
+                binding.minus.isEnabled = true
             }
-            binding.minus.isEnabled = true
-        }
-        binding.minus.setOnClickListener {
-            counter--
-            binding.status.text = "$averageStatus ${50 - counter}"
-            binding.counter.text = counter.toString()
-            if (counter == 0) {
-                binding.minus.isEnabled = false
-                binding.status.text = getText(R.string.default_status)
-                binding.status.setTextColor(getColorStateList(R.color.green))
+
+
+
+
+            binding.minus.setOnClickListener {
+                counter--
+                binding.status.text = "$averageStatus ${50 - counter}"
+                binding.counter.text = counter.toString()
+                if (counter == 0) {
+                    binding.minus.isEnabled = false
+                    binding.status.text = getText(R.string.default_status)
+                    binding.status.setTextColor(getColorStateList(R.color.green))
+                } else if (counter == 49) {
+                    binding.plus.isEnabled = true
+
+                }
             }
         }
         binding.reset.setOnClickListener {
@@ -41,6 +54,7 @@ class MainActivity : AppCompatActivity() {
             binding.status.text = getText(R.string.default_status)
             binding.reset.visibility = View.INVISIBLE
             binding.minus.isEnabled = false
+            binding.plus.isEnabled = true
             binding.status.setTextColor(getColorStateList(R.color.green))
         }
     }
