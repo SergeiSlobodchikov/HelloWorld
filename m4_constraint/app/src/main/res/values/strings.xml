@@ -6,4 +6,6 @@
     <string name="play_desc">play song</string>
     <string name="prev_desc">previous song</string>
     <string name="next_desc">next song</string>
-</resources>
+    <string name="beatles">Битлз</string>
+    <string name="music">Abbey Road</string>
+    </resources>
