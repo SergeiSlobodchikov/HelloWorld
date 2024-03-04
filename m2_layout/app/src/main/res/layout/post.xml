@@ -23,6 +23,7 @@
         android:layout_marginStart="16dp"
         android:layout_toEndOf="@id/icon"
         android:text="@string/top_text"
+        android:textColor="@color/black"
         android:lines="1"
         android:ellipsize="end"/>
 
@@ -35,8 +36,10 @@
         android:layout_marginBottom="10dp"
         android:layout_toEndOf="@id/icon"
         android:text="@string/bottom_text"
+        android:textColor="@color/black"
         android:lines="1"
         android:ellipsize="middle"/>
+
 
     <FrameLayout
         android:id="@+id/content"
