@@ -8,3 +8,13 @@
 Методы setTopText и setBottomText используются для установки текста в верхнем и нижнем виджетах соответственно.
 
 Таким образом, этот код позволяет создать виджет, который может отображать два разных макета, переключаясь между ними.
+
+## Задание 3
+
+Код [activity_seminar](https://github.com/SergeiSlobodchikov/HelloWorld/blob/main/m4_constraint/app/src/main/res/layout/activity_seminar.xml) представляет собой XML-файл, который используется для создания пользовательского интерфейса в Android. Он определяет макет, который содержит несколько ImageView и TextView. 
+
+ImageView с id "cover" имеет изображение "the_beatles" и занимает всю ширину и высоту родительского элемента. ImageView с id "play" имеет изображение "baseline_play_circle_24" и располагается под ImageView "cover". ImageView с id "skipNext" и "skipPrev" имеют изображения "baseline_skip_next_24" и "baseline_skip_previous_24" соответственно и располагаются по обе стороны от ImageView "play".
+
+TextView с id "artist" и "title" имеют стиль "TextStyle" и содержат строки "beatles" и "music" соответственно. Они располагаются под ImageView "play".
+
+Все элементы макета располагаются с помощью ConstraintLayout, который позволяет задавать ограничения для каждого элемента.
