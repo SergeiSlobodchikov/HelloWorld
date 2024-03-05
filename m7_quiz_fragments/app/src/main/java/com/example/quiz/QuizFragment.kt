@@ -34,7 +34,6 @@ class QuizFragment : Fragment() {
         }
     }
 
-
     private fun getAnswersByUser(): Int {
         var correctAnswersCount = 0
 
