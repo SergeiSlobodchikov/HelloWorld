@@ -13,4 +13,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
+//    MainActivity - это класс, который представляет собой главный класс активности приложения.
+//    Он инициализирует и устанавливает вид ActivityMainBinding, он содержит макет для главного экрана.
 }

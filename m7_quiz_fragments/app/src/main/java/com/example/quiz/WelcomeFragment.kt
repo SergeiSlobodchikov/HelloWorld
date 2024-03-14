@@ -19,6 +19,8 @@ class WelcomeFragment : Fragment() {
         binding = FragmentWelcomeBinding.inflate(inflater)
         return binding.root
     }
+    //Функция, которая вызывается при создании нового экземпляра WelcomeFragment. В этой функции создается
+    // и возвращается новый экземпляр FragmentWelcomeBinding.
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -27,4 +29,7 @@ class WelcomeFragment : Fragment() {
             findNavController().navigate(R.id.action_welcomeFragment_to_quizFragment)
         }
     }
+    //Функция, которая вызывается после того, как WelcomeFragment был создан и прикреплен к активности.
+    // В этой функции устанавливается слушатель на кнопку с id button, который при нажатии перенаправляет
+    // пользователя на QuizFragment.
 }

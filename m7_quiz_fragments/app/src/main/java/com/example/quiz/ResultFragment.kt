@@ -23,7 +23,8 @@ class ResultFragment : Fragment() {
         _binding = FragmentResultBinding.inflate(inflater)
         return binding.root
     }
-
+    // функция, которая вызывается при создании нового экземпляра ResultFragment.
+    // В этой функции создается и возвращается новый экземпляр FragmentResultBinding.
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -34,9 +35,12 @@ class ResultFragment : Fragment() {
             findNavController().navigate(R.id.action_resultFragment_to_quizFragment)
         }
     }
+    // функция, которая вызывается после того, как ResultFragment был создан и прикреплен к активности.
+    // В этой функции устанавливается текст на TextView с результатом и  кнопкой, при нажатии которой перенаправляет пользователя обратно на QuizFragment.
 
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
     }
+    //этой функцией освобождаем ресурсы.
 }

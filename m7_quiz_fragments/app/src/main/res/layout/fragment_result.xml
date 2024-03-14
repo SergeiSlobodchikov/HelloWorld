@@ -41,4 +41,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="@string/button_result_text" />
 
+<!--    Этот код представляет собой XML-файл, который определяет макет для фрагмента результатов.
+        TextView с id resultTitle, который содержит заголовок результатов.
+        TextView с id result, который отображает результат викторины.
+        Button с id button, который используется для перехода к предыдущему фрагменту.
+-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

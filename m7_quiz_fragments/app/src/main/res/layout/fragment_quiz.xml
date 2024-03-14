@@ -111,5 +111,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-
+<!--Этот код представляет собой XML-файл, который определяет макет для фрагмента викторины.
+TextView с id title, который содержит заголовок викторины.
+ScrollView с id questions, который содержит список вопросов и ответов.
+Button с id button, который используется для перехода к следующему фрагменту.
+-->
 </androidx.constraintlayout.widget.ConstraintLayout>

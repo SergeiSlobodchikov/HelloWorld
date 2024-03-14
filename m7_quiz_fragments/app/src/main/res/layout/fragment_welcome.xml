@@ -28,5 +28,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image"
         tools:ignore="VisualLintBounds,TextSizeCheck" />
+<!--    Этот код представляет собой XML-файл, который определяет макет для приветственного фрагмента.
+        ImageView с id image, который содержит изображение.
+        Button с id button, который используется для перехода к фрагменту викторины.
+-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
